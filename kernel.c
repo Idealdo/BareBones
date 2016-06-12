@@ -149,41 +149,37 @@ void kernel_main() {
 	/* Initialize terminal interface */
 	terminal_initialize();
  
-	/* Since there is no support for newlines in terminal_putchar
-         * yet, '\n' will produce some VGA specific character instead.
-         * This is normal.
-         */
-	    terminal_writestring("1.- Hello kernel World! How are you?\n");
-	    terminal_writestring("2.- Hello kernel World! How are you?\n");
-	    terminal_writestring("3.- Hello kernel World! How are you?\n");
-        terminal_writestring("4.- Hello kernel World! How are you?\n");
-        terminal_writestring("5.- Hello kernel World! How are you?\n");
-        terminal_writestring("6.- Hello kernel World! How are you?\n");
-        terminal_writestring("7.- Hello kernel World! How are you?\n");
-        terminal_writestring("8.- Hello kernel World! How are you?\n");
-        terminal_writestring("9.- Hello kernel World! How are you?\n");
-        terminal_writestring("10.- Hello kernel World! How are you?\n");
-        terminal_writestring("11.- Hello kernel World! How are you?\n");
-        terminal_writestring("12.- Hello kernel World! How are you?\n");
-        terminal_writestring("13.- Hello kernel World! How are you?\n");
-        terminal_writestring("14.- Hello kernel World! How are you?\n");
-        terminal_writestring("15.- Hello kernel World! How are you?\n");
-        terminal_writestring("16.- Hello kernel World! How are you?\n");
-	    terminal_writestring("17.- Hello kernel World! How are you?\n");
-	    terminal_writestring("18.- Hello kernel World! How are you?\n");
-        terminal_writestring("19.- Hello kernel World! How are you?\n");
-        terminal_writestring("20.- Hello kernel World! How are you?\n");
-        terminal_writestring("21.- Hello kernel World! How are you?\n");
-        terminal_writestring("22.- Hello kernel World! How are you?\n");
-        terminal_writestring("23.- Hello kernel World! How are you?\n");
-        terminal_writestring("24.- Hello kernel World! How are you?\n");
-        terminal_writestring("25.- Hello kernel World! How are you?");
-        terminal_writestring("26.- Hello kernel World! How are you?");
-        terminal_writestring("27.- Hello kernel World! How are you?");
-        terminal_writestring("28.- Hello kernel World! How are you?\n");
-        terminal_writestring("29.- Hello kernel World! How are you?\n");
-        terminal_writestring("30.- Hello kernel World! How are you?\n");
-        terminal_writestring("31.- Hello kernel World! How are you?\n");  	    	    	    	    	    	    	    	    	    	    	    	    
-	 //   swap_entryat(0,0, 0, 1);
+    terminal_writestring("1.- Hello kernel World! How are you?\n");
+    terminal_writestring("2.- Hello kernel World! How are you?\n");
+    terminal_writestring("3.- Hello kernel World! How are you?\n");
+    terminal_writestring("4.- Hello kernel World! How are you?\n");
+    terminal_writestring("5.- Hello kernel World! How are you?\n");
+    terminal_writestring("6.- Hello kernel World! How are you?\n");
+    terminal_writestring("7.- Hello kernel World! How are you?\n");
+    terminal_writestring("8.- Hello kernel World! How are you?\n");
+    terminal_writestring("9.- Hello kernel World! How are you?\n");
+    terminal_writestring("10.- Hello kernel World! How are you?\n");
+    terminal_writestring("11.- Hello kernel World! How are you?\n");
+    terminal_writestring("12.- Hello kernel World! How are you?\n");
+    terminal_writestring("13.- Hello kernel World! How are you?\n");
+    terminal_writestring("14.- Hello kernel World! How are you?\n");
+    terminal_writestring("15.- Hello kernel World! How are you?\n");
+    terminal_writestring("16.- Hello kernel World! How are you?\n");
+    terminal_writestring("17.- Hello kernel World! How are you?\n");
+    terminal_writestring("18.- Hello kernel World! How are you?\n");
+    terminal_writestring("19.- Hello kernel World! How are you?\n");
+    terminal_writestring("20.- Hello kernel World! How are you?\n");
+    terminal_writestring("21.- Hello kernel World! How are you?\n");
+    terminal_writestring("22.- Hello kernel World! How are you?\n");
+    terminal_writestring("23.- Hello kernel World! How are you?\n");
+    terminal_writestring("24.- Hello kernel World! How are you?\n");
+    terminal_writestring("25.- Hello kernel World! How are you?");
+    terminal_writestring("26.- Hello kernel World! How are you?");
+    terminal_writestring("27.- Hello kernel World! How are you?");
+    terminal_writestring("28.- Hello kernel World! How are you?\n");
+    terminal_writestring("29.- Hello kernel World! How are you?\n");
+    terminal_writestring("30.- Hello kernel World! How are you?\n");
+    terminal_writestring("31.- Hello kernel World! How are you?\n");  	    	    	    	    	    	    	    	    	    	    	    	    
+    //swap_entryat(0,0, 0, 1);
 
 }
