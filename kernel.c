@@ -34,13 +34,13 @@ enum vga_color {
 	COLOR_WHITE = 15,
 };
  
-uint16_t make_color(enum vga_color fg, enum vga_color bg) {
+uint8_t make_color(enum vga_color fg, enum vga_color bg) {
 	return fg | bg << 4;
 }
  
-uint32_t make_vgaentry(char c, uint16_t color) {
-	uint32_t c16 = c;
-	uint32_t color16 = color;
+uint16_t make_vgaentry(char c, uint16_t color) {
+	uint16_t c16 = c;
+	uint16_t color16 = color;
 	return c16 | color16 << 8;
 }
  
@@ -56,8 +56,8 @@ static const size_t VGA_HEIGHT = 25;
  
 size_t terminal_row;
 size_t terminal_column;
-uint16_t terminal_color;
-uint32_t* terminal_buffer;
+uint8_t terminal_color;
+uint16_t* terminal_buffer;
  
 void terminal_initialize() {
 	terminal_row = 0;
@@ -72,11 +72,11 @@ void terminal_initialize() {
 	}
 }
  
-void terminal_setcolor(uint16_t color) {
+void terminal_setcolor(uint8_t color) {
 	terminal_color = color;
 }
  
-void terminal_putentryat(char c, uint16_t color, size_t x, size_t y) {
+void terminal_putentryat(char c, uint8_t color, size_t x, size_t y) {
 	const size_t index = y * VGA_WIDTH + x;
 	terminal_buffer[index] = make_vgaentry(c, color);
 }
@@ -179,8 +179,8 @@ void kernel_main() {
         terminal_writestring("24.- Hello kernel World! How are you?\n");
         terminal_writestring("25.- Hello kernel World! How are you?");
         terminal_writestring("26.- Hello kernel World! How are you?");
-      terminal_writestring("27.- Hello kernel World! How are you?");
-       terminal_writestring("28.- Hello kernel World! How are you?\n");
+        terminal_writestring("27.- Hello kernel World! How are you?");
+        terminal_writestring("28.- Hello kernel World! How are you?\n");
         terminal_writestring("29.- Hello kernel World! How are you?\n");
         terminal_writestring("30.- Hello kernel World! How are you?\n");
         terminal_writestring("31.- Hello kernel World! How are you?\n");  	    	    	    	    	    	    	    	    	    	    	    	    
